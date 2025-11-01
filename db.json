@@ -1,0 +1,714 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "title": "4K UHD Smart TV",
+      "price": 499.99,
+      "description": "...",
+      "category": "electronics",
+      "image": "https://cdn.pixabay.com/photo/2017/02/15/11/15/widescreen-2068126_640.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 720
+      }
+    },
+    {
+      "id": "3",
+      "title": "Gaming Laptop",
+      "price": 1299.99,
+      "description": "...",
+      "category": "electronics",
+      "image": "https://cdn.pixabay.com/photo/2019/08/07/14/11/laptop-4390781_640.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 350
+      }
+    },
+    {
+      "id": "4",
+      "title": "Smartwatch",
+      "price": 249.99,
+      "description": "...",
+      "category": "electronics",
+      "image": "https://cdn.pixabay.com/photo/2016/11/19/11/30/smart-watch-1838848_640.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 890
+      }
+    },
+    {
+      "id": "5",
+      "title": "Portable Power Bank",
+      "price": 39.99,
+      "description": "...",
+      "category": "electronics",
+      "image": "https://cdn.pixabay.com/photo/2015/01/20/12/51/power-bank-605494_640.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 2100
+      }
+    },
+    {
+      "id": "6",
+      "title": "Silver Diamond Necklace",
+      "price": 299.99,
+      "description": "...",
+      "category": "jewelery",
+      "image": "https://cdn.pixabay.com/photo/2017/08/06/12/36/necklace-2591887_640.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 180
+      }
+    },
+    {
+      "id": "7",
+      "title": "Gold Hoop Earrings",
+      "price": 89.99,
+      "description": "...",
+      "category": "jewelery",
+      "image": "https://cdn.pixabay.com/photo/2016/09/06/17/38/pearl-1649454_640.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 450
+      }
+    },
+    {
+      "id": "8",
+      "title": "Men's Titanium Ring",
+      "price": 119.99,
+      "description": "...",
+      "category": "jewelery",
+      "image": "https://cdn.pixabay.com/photo/2016/08/15/22/07/ring-1596859_640.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 320
+      }
+    },
+    {
+      "id": "9",
+      "title": "Sapphire Engagement Ring",
+      "price": 1199.99,
+      "description": "...",
+      "category": "jewelery",
+      "image": "https://cdn.pixabay.com/photo/2017/01/06/19/15/ring-1958448_640.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 95
+      }
+    },
+    {
+      "id": "10",
+      "title": "Pearl Bracelet",
+      "price": 149.99,
+      "description": "...",
+      "category": "jewelery",
+      "image": "https://cdn.pixabay.com/photo/2016/11/29/13/26/pearl-1869788_640.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 210
+      }
+    },
+    {
+      "id": "11",
+      "title": "Men's Denim Jacket",
+      "price": 79.99,
+      "description": "...",
+      "category": "men's clothing",
+      "image": "https://cdn.pixabay.com/photo/2016/11/22/19/20/man-1850181_640.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 620
+      }
+    },
+    {
+      "id": "12",
+      "title": "Men's Chino Pants",
+      "price": 49.99,
+      "description": "...",
+      "category": "men's clothing",
+      "image": "https://cdn.pixabay.com/photo/2016/03/03/17/17/men-1234658_640.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 510
+      }
+    },
+    {
+      "id": "13",
+      "title": "Men's Graphic T-Shirt",
+      "price": 24.99,
+      "description": "...",
+      "category": "men's clothing",
+      "image": "https://cdn.pixabay.com/photo/2016/11/23/17/30/boy-1853945_640.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 980
+      }
+    },
+    {
+      "id": "14",
+      "title": "Men's Wool Peacoat",
+      "price": 189.99,
+      "description": "...",
+      "category": "men's clothing",
+      "image": "https://cdn.pixabay.com/photo/2017/08/01/01/33/beanie-2562646_640.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 310
+      }
+    },
+    {
+      "id": "15",
+      "title": "Men's Athletic Sneakers",
+      "price": 89.99,
+      "description": "...",
+      "category": "men's clothing",
+      "image": "https://cdn.pixabay.com/photo/2014/05/18/11/26/shoes-346986_640.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 760
+      }
+    },
+    {
+      "id": "16",
+      "title": "Women's Floral Maxi Dress",
+      "price": 69.99,
+      "description": "...",
+      "category": "women's clothing",
+      "image": "https://cdn.pixabay.com/photo/2016/06/20/23/50/model-1470104_640.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 480
+      }
+    },
+    {
+      "id": "17",
+      "title": "Women's High-Waist Jeans",
+      "price": 59.99,
+      "description": "...",
+      "category": "women's clothing",
+      "image": "https://cdn.pixabay.com/photo/2017/04/27/08/17/woman-2264826_640.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 830
+      }
+    },
+    {
+      "id": "18",
+      "title": "Women's Knit Sweater",
+      "price": 49.99,
+      "description": "...",
+      "category": "women's clothing",
+      "image": "https://cdn.pixabay.com/photo/2017/08/01/08/29/woman-2563491_640.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 610
+      }
+    },
+    {
+      "id": "19",
+      "title": "Women's Leather Handbag",
+      "price": 129.99,
+      "description": "...",
+      "category": "women's clothing",
+      "image": "https://cdn.pixabay.com/photo/2016/11/22/19/50/close-up-1850239_640.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 390
+      }
+    },
+    {
+      "id": "20",
+      "title": "Women's Ankle Boots",
+      "price": 99.99,
+      "description": "...",
+      "category": "women's clothing",
+      "image": "https://cdn.pixabay.com/photo/2018/01/04/19/43/ankle-boots-3061483_640.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 520
+      }
+    },
+    {
+      "id": "21",
+      "title": "The Midnight Library",
+      "price": 15.99,
+      "description": "...",
+      "category": "books",
+      "image": "https://cdn.pixabay.com/photo/2015/11/19/21/10/book-1052014_640.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 12500
+      }
+    },
+    {
+      "id": "22",
+      "title": "Atomic Habits",
+      "price": 18.99,
+      "description": "...",
+      "category": "books",
+      "image": "https://cdn.pixabay.com/photo/2016/09/10/17/18/book-1659717_640.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 21000
+      }
+    },
+    {
+      "id": "23",
+      "title": "The Silent Patient",
+      "price": 14.99,
+      "description": "...",
+      "category": "books",
+      "image": "https://cdn.pixabay.com/photo/2018/02/17/10/13/read-3159976_640.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 9500
+      }
+    },
+    {
+      "id": "24",
+      "title": "Sapiens: A Brief History of Humankind",
+      "price": 22.99,
+      "description": "...",
+      "category": "books",
+      "image": "https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_640.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 18500
+      }
+    },
+    {
+      "id": "25",
+      "title": "Mastering React",
+      "price": 49.99,
+      "description": "...",
+      "category": "books",
+      "image": "https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_640.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 450
+      }
+    },
+    {
+      "id": "26",
+      "title": "Espresso Machine",
+      "price": 249.99,
+      "description": "...",
+      "category": "home & kitchen",
+      "image": "https://cdn.pixabay.com/photo/2017/05/30/08/08/espresso-2355986_640.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 920
+      }
+    },
+    {
+      "id": "27",
+      "title": "Robot Vacuum Cleaner",
+      "price": 299.99,
+      "description": "...",
+      "category": "home & kitchen",
+      "image": "https://cdn.pixabay.com/photo/2018/01/18/19/06/vacuum-cleaner-3090882_640.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 1300
+      }
+    },
+    {
+      "id": "28",
+      "title": "Air Fryer",
+      "price": 89.99,
+      "description": "...",
+      "category": "home & kitchen",
+      "image": "https://cdn.pixabay.com/photo/2022/03/17/12/29/air-fryer-7074211_640.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 3500
+      }
+    },
+    {
+      "id": "29",
+      "title": "Chef's Knife Set",
+      "price": 119.99,
+      "description": "...",
+      "category": "home & kitchen",
+      "image": "https://cdn.pixabay.com/photo/2017/03/27/14/33/kitchen-2179021_640.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 880
+      }
+    },
+    {
+      "id": "30",
+      "title": "Non-Stick Cookware Set",
+      "price": 149.99,
+      "description": "...",
+      "category": "home & kitchen",
+      "image": "https://cdn.pixabay.com/photo/2015/07/02/10/46/cook-828938_640.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 1150
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@mstechhive.com",
+      "password": "admin",
+      "role": "admin",
+      "name": "Admin User"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "user123",
+      "role": "user",
+      "name": "Regular User"
+    },
+    {
+      "id": "168d",
+      "name": "Prakash Jaiswal",
+      "email": "prakashjaiswal.pj16@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "ce85",
+      "name": "Prakash",
+      "email": "prakah@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "carts": [
+    {
+      "id": "ef5e",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "888b",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "b715",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "a152",
+      "userId": "2",
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "id": "8a35",
+      "userId": "2",
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "id": "78be",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "b970",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "4407",
+      "userId": "2",
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "7231",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "55bd",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "2323",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "1282",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "f6ea",
+      "userId": "2",
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "12e6",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "d393",
+      "userId": "2",
+      "productId": 22,
+      "quantity": 1
+    },
+    {
+      "id": "2b27",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "7f82",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "2577",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "aaf2",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "5055",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "ad66",
+      "userId": "2",
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "714c",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "ee20",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "dbef",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "9217",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "fed9",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "8d8b",
+      "userId": 2,
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "id": "7395",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "45f7",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "a12b",
+      "userId": 2,
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "id": "6871",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "b34a",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "3ce9",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 2
+    },
+    {
+      "id": "1cad",
+      "userId": 2,
+      "productId": 3,
+      "quantity": 1
+    },
+    {
+      "id": "aa0f",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "f7d7",
+      "userId": 2,
+      "productId": 2,
+      "quantity": 2
+    },
+    {
+      "id": "68a4",
+      "userId": null,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "7bf5",
+      "userId": null,
+      "productId": 9,
+      "quantity": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "a81c",
+      "userId": "ce85",
+      "productId": "2",
+      "title": "4K UHD Smart TV",
+      "price": 499.99,
+      "quantity": 1,
+      "status": "Delivered",
+      "date": "2025-11-01T18:12:00.209Z"
+    },
+    {
+      "id": "e5a2",
+      "userId": "ce85",
+      "productId": "2",
+      "title": "4K UHD Smart TV",
+      "price": 499.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.461Z"
+    },
+    {
+      "id": "8307",
+      "userId": "ce85",
+      "productId": "3",
+      "title": "Gaming Laptop",
+      "price": 1299.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.478Z"
+    },
+    {
+      "id": "66d4",
+      "userId": "ce85",
+      "productId": "4",
+      "title": "Smartwatch",
+      "price": 249.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.492Z"
+    },
+    {
+      "id": "cda2",
+      "userId": "ce85",
+      "productId": "7",
+      "title": "Gold Hoop Earrings",
+      "price": 89.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.504Z"
+    },
+    {
+      "id": "72ad",
+      "userId": "ce85",
+      "productId": "22",
+      "title": "Atomic Habits",
+      "price": 18.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.519Z"
+    },
+    {
+      "id": "9ec5",
+      "userId": "ce85",
+      "productId": "21",
+      "title": "The Midnight Library",
+      "price": 15.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.535Z"
+    },
+    {
+      "id": "7caf",
+      "userId": "ce85",
+      "productId": "26",
+      "title": "Espresso Machine",
+      "price": 249.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T18:26:49.549Z"
+    },
+    {
+      "id": "5457",
+      "userId": "ce85",
+      "productId": "3",
+      "title": "Gaming Laptop",
+      "price": 1299.99,
+      "quantity": 1,
+      "status": "Pending",
+      "date": "2025-11-01T19:07:06.118Z"
+    },
+    {
+      "id": "ee6a",
+      "userId": "ce85",
+      "productId": "3",
+      "title": "Gaming Laptop",
+      "price": 2599.98,
+      "quantity": 2,
+      "status": "Pending",
+      "date": "2025-11-01T19:08:11.962Z"
+    }
+  ]
+}
