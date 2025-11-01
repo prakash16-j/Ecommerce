@@ -10,6 +10,7 @@ import {
 import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 
+// ✅ Optional: move categories to a shared constants file
 const categories = [
   { value: "", label: "All Categories" },
   { value: "electronics", label: "Electronics" },
@@ -29,6 +30,7 @@ const Navbar = () => {
   const { itemCount } = useCart();
   const { user, isAuthenticated, logout } = useAuth();
 
+  // ✅ Search handling
   const handleSearchSubmit = (e) => {
     e.preventDefault();
 
@@ -40,6 +42,7 @@ const Navbar = () => {
     setMenuOpen(false);
   };
 
+  // ✅ Logout handling
   const handleLogout = () => {
     logout();
     setDropdownOpen(false);
@@ -49,8 +52,8 @@ const Navbar = () => {
   return (
     <nav
       className="
-        fixed top-3 left-1/2 transform -translate-x-1/2 
-        w-[95%] z-50 
+        fixed top-3 left-1/2 transform -translate-x-1/2
+        w-[95%] z-50
         bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
         rounded-2xl shadow-lg
         px-4 py-3
@@ -62,7 +65,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           to="/user"
-          className="text-2xl font-extrabold tracking-wide text-white drop-shadow-sm"
+          className="text-2xl font-extrabold tracking-wide text-white drop-shadow-sm hover:text-gray-200 transition"
         >
           E-Shop
         </Link>
@@ -75,7 +78,7 @@ const Navbar = () => {
           {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
         </button>
 
-        {/* Desktop View */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center flex-grow justify-between ml-6">
           {/* Search Bar */}
           <form
@@ -86,13 +89,12 @@ const Navbar = () => {
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="
-                p-2 rounded-l-md bg-transparent 
-                text-white placeholder-white 
-                focus:outline-none
+                p-2 rounded-l-md bg-white text-gray-700
+                focus:outline-none cursor-pointer
               "
             >
               {categories.map((cat) => (
-                <option key={cat.value} value={cat.value} className="text-black">
+                <option key={cat.value} value={cat.value}>
                   {cat.label}
                 </option>
               ))}
@@ -104,8 +106,9 @@ const Navbar = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search products..."
               className="
-                flex-grow p-2 bg-transparent 
-                text-white placeholder-white 
+                flex-grow p-2 bg-transparent
+                text-white placeholder-white
+                border border-white border-l-0
                 focus:outline-none
               "
             />
@@ -113,7 +116,7 @@ const Navbar = () => {
             <button
               type="submit"
               className="
-                bg-white text-blue-700 font-semibold px-4 py-2 rounded-r-md 
+                bg-white text-blue-700 font-semibold px-4 py-2 rounded-r-md
                 hover:bg-gray-200 transition
               "
             >
@@ -121,7 +124,7 @@ const Navbar = () => {
             </button>
           </form>
 
-          {/* Cart + Profile */}
+          {/* Cart + Profile Section */}
           <div className="flex items-center space-x-6 relative ml-6">
             {/* Cart */}
             <Link
@@ -136,7 +139,7 @@ const Navbar = () => {
               )}
             </Link>
 
-            {/* Profile */}
+            {/* Profile Menu */}
             {isAuthenticated ? (
               <div className="relative">
                 <button
@@ -144,7 +147,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 hover:text-gray-200 transition"
                 >
                   <FaUser size={22} />
-                  <span>{user?.name || "Profile"}</span>
+                  <span>{user?.name?.split(" ")[0] || "Profile"}</span>
                   <FaChevronDown size={12} />
                 </button>
 
@@ -164,6 +167,13 @@ const Navbar = () => {
                     >
                       Edit Profile
                     </Link>
+                    <Link
+                      to="/user/orders"
+                      onClick={() => setDropdownOpen(false)}
+                      className="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      My Orders
+                    </Link>
                     <button
                       onClick={handleLogout}
                       className="block w-full text-left px-4 py-2 text-red-600 hover:bg-gray-100"
@@ -182,7 +192,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden mt-3 bg-white rounded-lg shadow-md p-4 space-y-4 text-gray-700">
           <form onSubmit={handleSearchSubmit} className="flex flex-col space-y-2">
@@ -238,6 +248,13 @@ const Navbar = () => {
                 className="hover:text-blue-600"
               >
                 Edit Profile
+              </Link>
+              <Link
+                to="/user/orders"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-blue-600"
+              >
+                My Orders
               </Link>
               <button
                 onClick={handleLogout}

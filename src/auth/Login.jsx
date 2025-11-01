@@ -28,7 +28,7 @@ const Login = () => {
 
     const delay = setTimeout(async () => {
       try {
-        const response = await fetch(`http://localhost:3001/users?email=${emailToVerify}`);
+const response = await fetch(`https://ecommercebackend-7avx.onrender.com/users?email=${emailToVerify}`);
         const data = await response.json();
         if (data.length > 0) {
           setStep("password");

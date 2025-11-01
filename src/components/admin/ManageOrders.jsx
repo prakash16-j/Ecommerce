@@ -3,11 +3,14 @@ import React, { useEffect, useState } from "react";
 const ManageOrders = () => {
   const [orders, setOrders] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const ordersPerPage = 5; // ✅ Display 5 orders per page
+  const ordersPerPage = 5;
+
+  // 🔹 Replace with your Render backend URL
+  const BASE_URL = "https://ecommercebackend-7avx.onrender.com";
 
   // ✅ Fetch all orders
   useEffect(() => {
-    fetch("http://localhost:3001/orders")
+    fetch(`${BASE_URL}/orders`)
       .then((res) => res.json())
       .then(setOrders)
       .catch(console.error);
@@ -29,14 +32,16 @@ const ManageOrders = () => {
 
   // ✅ Update order status
   const updateStatus = (id, newStatus) => {
-    fetch(`http://localhost:3001/orders/${id}`, {
+    fetch(`${BASE_URL}/orders/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status: newStatus }),
     })
       .then(() =>
         setOrders((prev) =>
-          prev.map((ord) => (ord.id === id ? { ...ord, status: newStatus } : ord))
+          prev.map((ord) =>
+            ord.id === id ? { ...ord, status: newStatus } : ord
+          )
         )
       )
       .catch(console.error);

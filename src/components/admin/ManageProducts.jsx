@@ -18,10 +18,13 @@ const ManageProducts = () => {
   const productsPerPage = 5;
   const navigate = useNavigate();
 
+  // 🔹 Your live backend base URL
+  const BASE_URL = "https://ecommercebackend-7avx.onrender.com";
+
   // ✅ Fetch Products
   const fetchProducts = async () => {
     try {
-      const res = await fetch("http://localhost:3001/products");
+      const res = await fetch(`${BASE_URL}/products`);
       const data = await res.json();
       setProducts(data);
     } catch (error) {
@@ -50,7 +53,7 @@ const ManageProducts = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
-        await fetch(`http://localhost:3001/products/${id}`, { method: "DELETE" });
+        await fetch(`${BASE_URL}/products/${id}`, { method: "DELETE" });
         setProducts((prev) => prev.filter((p) => p.id !== id));
       } catch (error) {
         console.error("Error deleting product:", error);
@@ -88,7 +91,7 @@ const ManageProducts = () => {
   const handleSaveEdit = async (e) => {
     e.preventDefault();
     try {
-      await fetch(`http://localhost:3001/products/${editProduct.id}`, {
+      await fetch(`${BASE_URL}/products/${editProduct.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...editProduct, ...formData }),
@@ -114,7 +117,7 @@ const ManageProducts = () => {
         },
       };
 
-      await fetch(`http://localhost:3001/products`, {
+      await fetch(`${BASE_URL}/products`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newProduct),
@@ -374,3 +377,4 @@ const ManageProducts = () => {
 };
 
 export default ManageProducts;
+v

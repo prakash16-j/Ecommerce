@@ -17,6 +17,9 @@ import { useAuth } from "../../context/AuthContext";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#AF19FF"];
 
+// ✅ Use your deployed backend URL
+const API_BASE = "https://ecommercebackend-7avx.onrender.com";
+
 const AdminDashboard = () => {
   const [stats, setStats] = useState({ totalProducts: 0, totalOrders: 0 });
   const [recentOrders, setRecentOrders] = useState([]);
@@ -31,8 +34,8 @@ const AdminDashboard = () => {
     const fetchDashboardData = async () => {
       try {
         const [productsRes, ordersRes] = await Promise.all([
-          fetch("http://localhost:3001/products"),
-          fetch("http://localhost:3001/orders"),
+          fetch(`${API_BASE}/products`),
+          fetch(`${API_BASE}/orders`),
         ]);
 
         const products = await productsRes.json();
@@ -78,7 +81,6 @@ const AdminDashboard = () => {
       } catch (err) {
         console.error("Failed to fetch admin data:", err);
       } finally {
-        // ✅ Delay shimmer disappearance for smoother UX
         setTimeout(() => setLoading(false), 1000);
       }
     };
@@ -91,7 +93,7 @@ const AdminDashboard = () => {
     navigate("/login");
   };
 
-  // ✅ Shimmer Loader Component (Blue Gradient)
+  // ✅ Blue shimmer loading skeleton
   const Shimmer = () => (
     <div className="animate-pulse space-y-6 p-6">
       <style>
@@ -108,25 +110,21 @@ const AdminDashboard = () => {
         `}
       </style>
 
-      {/* Header shimmer */}
       <div className="flex justify-between">
         <div className="h-8 gradient-shimmer rounded w-1/3"></div>
         <div className="h-8 gradient-shimmer rounded w-24"></div>
       </div>
 
-      {/* Stats shimmer */}
       <div className="grid grid-cols-2 gap-6">
         <div className="h-24 gradient-shimmer rounded"></div>
         <div className="h-24 gradient-shimmer rounded"></div>
       </div>
 
-      {/* Charts shimmer */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="h-64 gradient-shimmer rounded"></div>
         <div className="h-64 gradient-shimmer rounded"></div>
       </div>
 
-      {/* Table shimmer */}
       <div className="h-64 gradient-shimmer rounded"></div>
     </div>
   );
@@ -135,7 +133,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="p-4 sm:p-6 space-y-10 relative">
-      {/* Header with Logout */}
+      {/* Header */}
       <div className="flex justify-between items-center flex-wrap mb-4">
         <h1 className="text-2xl sm:text-3xl font-bold text-center sm:text-left">
           Admin Dashboard
