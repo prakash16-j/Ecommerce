@@ -2,9 +2,7 @@
   "name": "expensetracker",
   "private": true,
   "version": "0.0.0",
-
   "homepage": "https://prakash16-j.github.io/Ecommerce/",
-
   "type": "module",
   "scripts": {
     "dev": "vite",
